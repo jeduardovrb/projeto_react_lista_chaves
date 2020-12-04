@@ -38,11 +38,6 @@ const App = () => {
           />
         ))}
       </div>
-      <div>
-        <pre>
-          {JSON.stringify(tarefas, null, 4)}
-        </pre>
-      </div>
     </div>
   )
 }
