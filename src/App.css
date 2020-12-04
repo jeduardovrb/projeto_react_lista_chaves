@@ -63,7 +63,8 @@
 
 .field-item {
   border: none;
-  border-bottom: 1px solid tomato; 
+  border-bottom: 1px solid tomato;
+  background-color: #61dafb; 
 }
 
 
