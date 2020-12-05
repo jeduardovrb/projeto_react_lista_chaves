@@ -16,16 +16,9 @@ const AdicionarRegistro = ({ onSubmit }) => {
   return (
     <div>
       <form onSubmit={submit}>
-        <input 
-          className="field"
-          placeholder="Digite o Registro..."
-          onChange={adicionarRegistro}
-        />
+        <input className="field" placeholder="Digite o Registro..." onChange={adicionarRegistro}/>
 
-        <button type="submit">
-          Adicionar
-        </button>
-
+        <button type="submit">Adicionar</button>
       </form>
     </div>
   )

@@ -8,12 +8,17 @@ const App = () => {
 
   function Adicionar(task) {
     const registro = Array.from(tarefas);
+    // push - adiciona um ou mais elementos ao final de um array e retorna o novo comprimento desse array.
     registro.push({id: tarefas.length, value: task});
     setTarefas(registro);
   }
 
   function Atualizar({target}, index) {
     const registro = Array.from(tarefas);
+    // O método splice() altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
+    // array.splice(indice[, deleteCount[, elemento1[, ...[, elementoN]]])
+    // Se o parâmetro deleteCount não é especificado, ou se é maior que o número de elementos restantes na lista 
+    // iniciando pelo índice, então todos os elementos até o fim da lista serão deletados.
     registro.splice(index, 1, { id: index, value: target.value });
     setTarefas(registro);
   }
